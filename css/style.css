@@ -1,0 +1,101 @@
+body {
+	background-color: pink;
+}
+
+div#first {
+	background-color: green;
+}
+
+div#second {
+	background-color: blue;
+}
+
+div#third {
+	background-color: red;
+}
+
+/* SMALL */
+@media only screen and (max-width: 40em) { 
+  
+	div#first{
+	 background-color: red;
+	}
+
+	div#second{
+	 background-color: orange;
+	}
+
+	div#third{
+	 background-color: yellow;
+	}
+
+}
+
+
+/* MEDIUM */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+
+	body {
+		background-color: orange;
+	}
+
+} /* end MEDIUM */
+
+
+/* LARGE */
+@media only screen and (min-width: 64.063em) { 
+
+	body {
+		background-color: red;
+	}
+
+	nav.top-bar {
+		height: 143px;
+	}
+
+	nav.top-bar .top-bar-section ul.right {
+		height: 50px !important;
+	}
+
+	nav.top-bar .top-bar-section ul.right > li {
+		height: 50px;
+	}
+
+	nav.top-bar .top-bar-section ul.right > li a {
+		height: 50px;
+		display: block;
+		border-bottom: 4px solid #00CCCC;
+		padding-bottom: 20px;
+		font-size: 14px;
+		letter-spacing: 2;
+		padding-left: 10px;
+		padding-right:10px;
+		color: #00CCCC;
+	}
+
+	nav.top-bar .top-bar-section ul.right > li a:hover {
+		background-color: transparent;
+		color: white;
+		border-bottom: 4px solid #FFFFFF;
+	}
+
+	nav.top-bar .top-bar-section ul.right > li.active a:hover {
+		background-color: transparent;
+		color: white;
+		border-bottom: 4px solid #FFFFFF;
+	}
+
+	nav.top-bar .top-bar-section ul.right > li.active a {
+		height: 50px;
+		background-color: transparent;
+		display: block;
+		border-bottom: 4px solid #FFFFFF;
+		padding-bottom: 20px;
+		font-size: 14px;
+		letter-spacing: 2;
+		padding-left: 10px;
+		padding-right:10px;
+		color: #FFFFFF;
+	}
+
+} /* end LARGE */
