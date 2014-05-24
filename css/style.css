@@ -2,6 +2,10 @@ body {
 	background-color: pink;
 }
 
+p, h1, h2, ul, li, a {
+	font-family: "Lato", san-serif;
+}
+
 div#first {
 	background-color: green;
 }
@@ -49,12 +53,21 @@ div#third {
 		background-color: red;
 	}
 
+	header {
+		background-color: #333333;
+		background: black url('../images/border.png') repeat-x;
+	}
+
 	nav.top-bar {
 		height: 143px;
+		margin: auto;
+		background-color: transparent;
 	}
 
 	nav.top-bar .top-bar-section ul.right {
 		height: 50px !important;
+		margin-top: 40px;
+		background-color: transparent;
 	}
 
 	nav.top-bar .top-bar-section ul.right > li {
@@ -67,10 +80,13 @@ div#third {
 		border-bottom: 4px solid #00CCCC;
 		padding-bottom: 20px;
 		font-size: 14px;
-		letter-spacing: 2;
+		letter-spacing: 2px;
 		padding-left: 10px;
 		padding-right:10px;
 		color: #00CCCC;
+		font-family: "Lato", san-serif;
+		text-transform: uppercase;
+		background-color: transparent;
 	}
 
 	nav.top-bar .top-bar-section ul.right > li a:hover {
@@ -97,5 +113,32 @@ div#third {
 		padding-right:10px;
 		color: #FFFFFF;
 	}
+
+	nav.top-bar ul.title-area li.name a h1 span#flappy {
+		font-size: 54px;
+		color: #00CCCC;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		position: absolute;
+		margin-top: 40px;
+	}
+
+	nav.top-bar ul.title-area li.name a h1 span#app {
+		font-size: 54px;
+		color: #00CCCC;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		position: absolute;
+		margin-top: 40px;
+		margin-left: 300px;
+	}
+
+	nav.top-bar ul.title-area li.name a img {
+		position: absolute;
+		margin-left: 200px;
+		margin-top: 30px;
+	}
+	
+
 
 } /* end LARGE */
